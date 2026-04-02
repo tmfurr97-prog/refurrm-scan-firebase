@@ -1,16 +1,30 @@
-# myapp
+# refurrm-scan-firebase
 
-A new Flutter project.
+Flutter app scaffolded for web and mobile targets.
 
-## Getting Started
+## Development
 
-This project is a starting point for a Flutter application.
+Install dependencies:
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+flutter pub get
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Run locally:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter run
+```
+
+## Deployment
+
+The project deployment guide lives here:
+
+- `docs/deployment.md`
+
+It covers:
+
+- one-time Firebase Hosting setup
+- production web builds
+- preview deployments
+- common deployment issues
