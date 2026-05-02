@@ -7,7 +7,7 @@ Flutter app scaffolded for web and mobile targets.
 Install dependencies:
 
 ```bash
-flutter pub get
+flutter pub
 ```
 
 Run locally:
