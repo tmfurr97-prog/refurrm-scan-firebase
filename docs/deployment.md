@@ -41,7 +41,7 @@ npm install -g firebase-tools
 
 ```bash
 firebase login
-```
+``
 
 ### 3. Fetch Flutter packages
 
@@ -65,6 +65,7 @@ Use these answers when prompted:
 - **What do you want to use as your public directory?** `build/web`
 - **Configure as a single-page app?** `Yes`
 - **Set up automatic builds and deploys with GitHub?** `No` for now
+
 - **File `build/web/index.html` already exists. Overwrite?** `No`
 
 This should create:

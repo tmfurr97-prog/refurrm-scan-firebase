@@ -8,6 +8,7 @@
     pkgs.flutter
     pkgs.jdk21
     pkgs.unzip
+    pkgs.mujoco
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -27,12 +28,13 @@
       enable = true;
       previews = {
         web = {
-          command = ["flutter" "run" "--machine" "-d" "web-server" "--web-hostname" "0.0.0.0" "--web-port" "$PORT"];
-          manager = "flutter";
-        };
-        android = {
-          command = ["flutter" "run" "--machine" "-d" "android" "-d" "localhost:5555"];
-          manager = "flutter";
+          # The command to run to start the server
+          command = "flutter run -d web-server --web-port $PORT --web-hostname $HOST";
+          # The URL to open in the preview browser
+          # Will use port, host, and path if not set
+          url = "http://$HOST:$PORT";
+          # The port to listen on
+          port = 3000;
         };
       };
     };
