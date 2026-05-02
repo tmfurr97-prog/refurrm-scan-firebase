@@ -26,16 +26,14 @@
     # Enable previews and customize configuration
     previews = {
       enable = true;
-      previews = {
-        web = {
-          # The command to run to start the server
-          command = "flutter run -d web-server --web-port $PORT --web-hostname $HOST";
-          # The URL to open in the preview browser
-          # Will use port, host, and path if not set
-          url = "http://$HOST:$PORT";
-          # The port to listen on
-          port = 3000;
-        };
+      web = {
+        # The command to run to start the server
+        command = "flutter run -d web-server --web-port $PORT --web-hostname $HOST";
+        # The URL to open in the preview browser
+        # Will use port, host, and path if not set
+        url = "http://$HOST:$PORT";
+        # The port to listen on
+        port = 3000;
       };
     };
   };
